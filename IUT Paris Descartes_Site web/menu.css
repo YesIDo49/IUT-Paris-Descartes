@@ -1,0 +1,302 @@
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Avenir, sans-serif;
+}
+
+.btn-covid
+{
+	background-color: #EAA903;
+	width: 8rem;
+}
+
+.btn-covid:hover
+{
+	background-color:  #ffcd4f;
+	transition: all 0.3s ease-in-out;
+	color : #555;
+}
+
+header .menu-bar ul
+{
+	text-align: bottom;
+}
+
+nav
+{
+	width: 100%;
+	margin: 0 auto !important;
+	background-color: white;
+	position: relative;
+	text-align: right;
+	top: 0 auto;
+	padding-left: 5rem;
+}
+
+nav li
+{
+	display: inline;
+	list-style: none;
+}
+
+nav a
+{
+	display:inline-block;
+	margin: 0 30px;
+	margin-top: 50px;
+}
+
+#logo
+{
+	width: 200px;
+	position:static;
+	margin-right: 40px;
+	margin-left: 40px;
+	background-color: white;
+	display: none;
+}
+
+
+
+#bars
+{
+	color: #CE0225;
+	cursor: pointer;
+}
+
+.material-icons
+{
+	transform: rotate(90deg);
+	color : #9F9CA1;
+}
+
+.material-icons:hover
+{
+	color : #CE0225;
+	transition: all 0.3s ease-in-out;
+}
+
+.conteneur-nav
+{
+	width: 90%;
+	padding: 10px;
+}
+
+nav input[type=checkbox]
+{
+	display: none;
+}
+
+nav label
+{
+	width: 10%;
+	padding: 10px 0px;
+	margin: 0px 10px;
+	text-align: center;
+	vertical-align: right;
+	background-color: transparent;
+}
+
+nav ul
+{
+	display: none;
+	list-style-type: none;
+	background-color: white;
+}
+
+#head-menu
+{
+	border-top: 3px solid #CE0225;
+	background-color: white;
+}
+
+nav input[type=checkbox]:checked + ul
+{
+	display: flex;
+	flex-flow : column wrap;
+	border: transparent;
+	box-shadow: 1px 3px 10px 1px #9F9CA1;
+}
+
+nav ul li
+{
+	flex: 1 1 auto;
+	text-align: left;
+}
+
+nav > div > ul > li > a
+{
+	color: rgba(0, 0, 0, 0.6);
+	background-color:  rgb(238, 238, 238);
+	margin: 0 30px;
+	font-weight: 600;
+}
+
+nav > div > ul > li > a:hover
+{
+	color: #9F9CA1;
+	transition: all 0.3s ease-in-out;
+}
+
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 10px 10px;
+}
+
+.sous
+{
+	display: flex;
+	flex-flow: column wrap;
+	z-index: 100;
+	background-color: white;
+	transition: all 0.3s ease-in-out;
+	padding: 0px 0px;
+}
+
+.sous li
+{
+	flex: 1 1 auto;
+	text-align: left;
+	margin : 15px;
+	padding: 0px;
+}
+
+.sous a
+{
+	padding: 0px 0px;
+	margin: 0 50px;
+	background-color: white;
+	color: #555;
+}
+
+.sous a:hover
+{
+	background-color: #dadada;
+	color: #9F9CA1;
+	transition: all 0.3s ease-in-out;
+}
+
+/*MENU RESPONSIVE*/
+@media screen and (min-width: 950px)
+{
+	nav
+	{
+		margin: 0 100px;
+	}
+
+	.conteneur-contenu
+	{
+		margin-top: 180px;
+		height: 1500px;
+	}
+
+	#head-menu
+	{
+		border-top: transparent;
+	}
+
+	nav label, nav input
+	{
+		display: none;
+	}
+
+	nav input[type=checkbox]:checked + ul, nav ul
+	{
+		display: flex;
+		flex-flow: row wrap;
+		background-color: transparent;
+		box-shadow: none;
+		margin: auto;
+	}
+
+	nav ul li
+	{
+		position: relative;
+		margin: 0px;
+	}
+
+	nav > div > ul > li > a
+	{
+		color: #6F666A;
+		background-color: white;
+		margin: 0 0px;
+		padding: 10px;
+		font-weight: normal;
+	}
+
+	nav a
+	{
+		color : #6F666A;
+		border-bottom: 2px solid transparent;
+	}
+
+	nav a:hover
+	{
+		color: #9F9CA1;
+		text-decoration: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.sous
+	{
+		display: none;
+		flex-flow: column wrap;
+		z-index: 1000;
+		box-shadow: 1px 3px 10px 1px #9F9CA1;
+		background-color: white;
+		position: absolute;
+		width: 125%;
+		border-top: 3px solid #CE0225;
+		padding: 0px;
+	}
+
+	nav > div > ul li:hover .sous
+	{
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	.sous a
+	{
+		margin : auto;
+		border-bottom: none;
+		background-color: white;
+	}
+
+	.sous a:hover
+	{
+		border-bottom: none;
+		background-color: RGBa(200,200,200,0.1);
+		transition: all 0.3s ease-in-out;
+	}
+
+	.deroulant > a::after
+	{
+		font-family: "ETmodules";
+		content : "3";
+		color : #6F666A;
+		font-size: 20px;
+	}
+
+	.deroulant > a:hover::after
+	{
+		color : #9F9CA1;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#logo
+	{
+		display: flex;
+	}
+}
+
+.conteneur-contenu
+{
+	margin: 50px 20px;
+	height: 1500px;
+}

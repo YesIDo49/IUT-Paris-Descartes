@@ -1,0 +1,125 @@
+
+/* RESPONSIVITE DU SITE*/
+@media screen and (max-width: 980px)
+{
+	/*BANNIERE DEBUT*/
+	.header
+	{
+		display: none;
+	}
+
+	/*BANNIERE FIN*/
+	/*BOUTON DEBUT*/
+	.button
+	{
+		color:#cf0a2c;
+		border: 2px solid #cf0a2c;
+		border-radius:5px;
+		background-color:#FFF;
+		text-transform: capitalize;
+	}
+
+	.button span:after
+	{
+		font-size:20px;
+	}
+
+	.button:hover
+	{
+		background-color:#EFEFEF;
+		border-style: hidden;
+	}
+
+	/*BOUTON FIN*/
+	/*RENTREE DEBUT*/
+	.item_droit
+	{
+		display: none;
+	}
+
+	.item_gauche
+	{
+		flex: 2;
+	}
+
+	.bandeau
+	{
+		background-color: #FFF;
+		background-image:none;
+	}
+
+	.rentree
+	{
+		color: #555 !important;
+		;
+		font-weight: 900;
+		font-size: 30px;
+		padding-bottom: 10px;
+		text-align: left;
+		font-family: "Open Sans", Arial, sans-serif;
+		text-transform: capitalize;
+	}
+
+	.bandeau p, .resp-title, .candidatures h2
+	{
+		color: #666;
+		font-size: 14px;
+		margin: 0;
+		padding: 0;
+		line-height: 1.7rem;
+	}
+
+	/*RENTREE FIN*/
+	/*CANDIDATURES DEBUT*/
+	.candidatures h3
+	{
+		text-align:left;
+		padding-top: 2.3rem;
+		padding-bottom: 1rem;
+	}
+
+	/*CANDIDATURE FIN*/
+	/*DIPLOMES DEBUT*/
+	.DIPL_ICON
+	{
+		color:#cf0a2c;
+	}
+
+	.diplomes
+	{
+		background-color: #FFF;
+	}
+
+	.dip
+	{
+		color: #333;
+		font-size: 18px;
+	}
+
+	.dipexplications p
+	{
+		color: #666;
+		font-size:14px;
+	}
+
+	/*DIPLOME FIN*/
+	/*ACTUALITES DEBUT*/
+	/*ACTUALITES FIN*/
+	/*CHIFFRES DEBUT*/
+	.chiffres
+	{
+		background-color:#FFF;
+	}
+
+	.valeur
+	{
+		color: #666;
+		font-family: "Open Sans", Arial, sans-serif;
+		font-size: 72px;
+		font-weight: 500;
+	}
+
+	/*CHIFFRES FIN*/
+	/*FOOTER DEBUT*/
+	/*FOOTER FIN*/
+}

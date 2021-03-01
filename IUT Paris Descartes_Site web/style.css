@@ -1,0 +1,281 @@
+
+/*Style de la page*/
+.container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.diplomes, .chiffres, .informations
+{
+	background-color :#EAA903;
+}
+
+/*DEBUT BANNIERE*/
+header
+{
+	z-index:9;
+}
+
+.sticky
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.header
+{
+	overflow: hidden;
+	background-color: #cf0a2c;
+}
+
+.header a
+{
+	float: right;
+	color: #fff;
+	text-align: center;
+	padding: 9px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Open Sans", Arial, sans-serif;
+	line-height: 12px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+.header a:hover
+{
+	background-color: transparent;
+	color: pink;
+}
+
+.inner
+{
+	width: 80%;
+	margin: auto;
+}
+
+.social_icons i
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 14px;
+	text-align: center;
+}
+
+.social_icons i:hover
+{
+	background-color: transparent;
+	color: pink;
+}
+
+/*FIN BANNIERE*/
+/*DEBUT INFORMATIONS */
+/*DEBUT BOUTON */
+.boutonJaune
+{
+	color: #eaa903;
+	border: 2px solid #eaa903;
+}
+
+.boutonBlanc
+{
+	color: #FFF;
+	border: 2px solid #FFF;
+}
+
+.button
+{
+	border-radius: 100px;
+	padding: 0.3em 1rem;
+	background-color: transparent;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 16px;
+	font-weight: 700!important;
+	transition: all 0.5s;
+	margin: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 23.8px;
+	font-family: 'Montserrat',sans-serif!important;
+	font-weight: 700;
+}
+
+.button span
+{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after
+{
+	content: '\2BC8';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	font-size: 10px;
+}
+
+.button:hover span
+{
+	padding-right: 25px;
+}
+
+.button:hover span:after
+{
+	opacity: 1;
+	right: 0;
+}
+
+/*FIN BOUTON*/
+.bandeau
+{
+	background-color: #eaa903;
+	background-image: url('./images_iut/fd-opaque.png');
+	font-weight: 500;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	width: 100%;
+}
+
+.covid
+{
+	margin-bottom: 2rem;
+}
+
+.item_gauche
+{
+	flex: 0.5;
+	padding-left:100px;
+	padding-right: 100px;
+}
+
+.item_droit
+{
+	float: right;
+	box-sizing: border-box;
+	background-image: url(./images_iut/iut_accueil.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0.5;
+}
+
+/*FIN INFORMATIONS*/
+/*DEBUT CANDIDATURE*/
+.candidatures
+{
+	padding:5rem;
+}
+
+/*FIN CANDIDATURE*/
+/*DIPLOMES DEBUT*/
+.diplometxt
+{
+	display: flex;
+	padding:5em 5em 5rem;
+	justify-content:center;
+}
+
+.diplomes
+{
+	padding: 5rem;
+}
+
+.dipexplications
+{
+	padding: 1rem;
+}
+
+/*DIPLOMES FIN*/
+/*ACTUALITES DEBUT*/
+.pageCandidatures
+{
+	padding: 10rem, 30rem;
+}
+
+.pageActualite
+{
+	padding-bottom: 3rem;
+	padding-top: 10rem;
+}
+
+.titre-nul
+{
+	border-left: 3px solid #CF0A2C !important;
+	padding-left: 0.5rem;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.petiteCarte
+{
+	width: auto;
+	min-width: 276.48px;
+	margin-bottom: 50px;
+}
+
+footer
+{
+	padding-top: 40px;
+	padding-bottom: 50px;
+	text-decoration-color: white;
+	background-color: #CF0A2C !important;
+}
+
+/*ACTUALITES FIN*/
+/*CHIFFRE DEBUT*/
+.articleChiffres
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	padding: 5em 2em 1rem;
+}
+
+.chiffres
+{
+	padding: 5em 2em 1rem;
+}
+
+.statut
+{
+	width: min-content;
+	padding: 5em 2em 1rem;
+}
+
+/*CHIFFRE FIN*/
+/*ACTUALITES DEBUT*/
+.actu
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*ACTUALITES FIN*/
+/*FOOTER DEBUT*/
+.footer
+{
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/*Espace autour de chaque txt*/
+	padding:5em 0 5rem;
+	/*Espace top et bottom*/
+}
+
+.footer
+{
+	background-color :#CE0225;
+}
+
+/*FOOTER FIN*/
